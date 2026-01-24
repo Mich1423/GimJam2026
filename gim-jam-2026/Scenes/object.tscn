@@ -1,25 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://l2w35p2a0uy6"]
+[gd_scene load_steps=4 format=3 uid="uid://l2w35p2a0uy6"]
 
 [ext_resource type="Script" uid="uid://mxp3nmpqdwih" path="res://Scripts/object.gd" id="1_ufb5h"]
+[ext_resource type="Texture2D" uid="uid://c21thb86p0rrh" path="res://assets/objects/Chest.png" id="2_h806f"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_7u77a"]
-size = Vector2(32, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ufb5h"]
+size = Vector2(22.6, 22.6)
 
-[node name="Object" type="Sprite2D"]
-texture = SubResource("PlaceholderTexture2D_7u77a")
+[node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_ufb5h")
 
-[node name="Button" type="Button" parent="."]
+[node name="Object" type="Sprite2D" parent="."]
+texture = ExtResource("2_h806f")
+
+[node name="Button" type="Button" parent="Object"]
 self_modulate = Color(1, 1, 1, 0)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -12.0
-offset_top = -12.0
-offset_right = -12.0
-offset_bottom = -12.0
+offset_left = -16.0
+offset_top = -16.0
+offset_right = -16.0
+offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
-[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 0.7853982
+shape = SubResource("RectangleShape2D_ufb5h")
+
+[connection signal="button_down" from="Object/Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Object/Button" to="." method="_on_button_button_up"]
