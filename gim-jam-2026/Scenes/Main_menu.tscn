@@ -1,0 +1,134 @@
+[gd_scene load_steps=8 format=3 uid="uid://rh2d35scwl6s"]
+
+[ext_resource type="Script" uid="uid://cfksf40l838h3" path="res://main_menu.gd" id="1_7sp8y"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_siod4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_siod4"]
+bg_color = Color(0.69298553, 0, 0.16201794, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.14)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b07fi"]
+bg_color = Color(0.34918666, 0, 0.06230811, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.14)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x6lt7"]
+bg_color = Color(0.5221917, 0, 0.109091826, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.14)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x6lt7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b07fi"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 607.0
+offset_top = 473.0
+offset_right = -545.0
+offset_bottom = -175.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_7sp8y")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -606.0
+offset_top = -473.0
+offset_right = 545.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_siod4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+offset_left = -228.0
+offset_top = -151.25
+offset_right = 228.0
+offset_bottom = 151.25
+theme_override_constants/separation = 30
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 11.55
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b07fi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_x6lt7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_x6lt7")
+text = "Start"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 11.55
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b07fi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_x6lt7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_x6lt7")
+text = "Setting"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 11.55
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b07fi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_x6lt7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_x6lt7")
+text = "Credit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -232.0
+offset_top = -349.0
+offset_right = 228.0
+offset_bottom = -216.0
+theme_override_colors/font_color = Color(0.9088206, 0, 0.14427301, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_b07fi")
+text = "No Space Left"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_credit_pressed"]
