@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://rh2d35scwl6s"]
 
-[ext_resource type="Script" uid="uid://cfksf40l838h3" path="res://main_menu.gd" id="1_b07fi"]
+[ext_resource type="Script" uid="uid://cfksf40l838h3" path="res://main_menu.gd" id="1_7sp8y"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_siod4"]
 
@@ -46,7 +46,7 @@ offset_bottom = -175.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 3
-script = ExtResource("1_b07fi")
+script = ExtResource("1_7sp8y")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
