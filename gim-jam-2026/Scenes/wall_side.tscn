@@ -1,10 +1,10 @@
-[gd_scene load_steps=8 format=4 uid="uid://dbg4oyypwtyx2"]
+[gd_scene load_steps=8 format=4 uid="uid://b50wva7jod36b"]
 
-[ext_resource type="Script" uid="uid://4txgilwm8ob4" path="res://Scripts/wall.gd" id="1_t8lic"]
-[ext_resource type="Texture2D" uid="uid://flu53kjqh8cx" path="res://Assets/tilemap/Dungeon_Map.png" id="1_yj23k"]
+[ext_resource type="Script" uid="uid://4txgilwm8ob4" path="res://Scripts/wall.gd" id="1_08t5n"]
+[ext_resource type="Texture2D" uid="uid://flu53kjqh8cx" path="res://Assets/tilemap/Dungeon_Map.png" id="2_jh3cs"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t8lic"]
-texture = ExtResource("1_yj23k")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l8sii"]
+texture = ExtResource("2_jh3cs")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/terrain_set = 0
@@ -248,16 +248,16 @@ texture_region_size = Vector2i(32, 32)
 6:7/0 = 0
 7:7/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_podf1"]
+[sub_resource type="TileSet" id="TileSet_62xfx"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Terrain 0"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
-sources/0 = SubResource("TileSetAtlasSource_t8lic")
+sources/0 = SubResource("TileSetAtlasSource_l8sii")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_podf1"]
-texture = ExtResource("1_yj23k")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_08t5n"]
+texture = ExtResource("2_jh3cs")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/terrain_set = 0
@@ -501,43 +501,37 @@ texture_region_size = Vector2i(32, 32)
 6:7/0 = 0
 7:7/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_2td0o"]
+[sub_resource type="TileSet" id="TileSet_jh3cs"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Terrain 0"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
-sources/0 = SubResource("TileSetAtlasSource_podf1")
+sources/0 = SubResource("TileSetAtlasSource_08t5n")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yj23k"]
-size = Vector2(128, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2mes"]
+size = Vector2(224, 32)
 
-[node name="Wall_Open" type="CharacterBody2D" node_paths=PackedStringArray("timer")]
+[node name="Wall_Side" type="CharacterBody2D" node_paths=PackedStringArray("timer")]
 collision_mask = 0
-script = ExtResource("1_t8lic")
+script = ExtResource("1_08t5n")
+letak = 1
 timer = NodePath("Timer")
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(16, -16)
-tile_map_data = PackedByteArray("AAD+/wAAAAACAAUAAAAAAAAAAAACAAUAAAABAAAAAAACAAUAAAACAAAAAAACAAUAAAD9/wAAAAACAAUAAAD8/wAAAAACAAUAAAADAAAAAAAGAAAAAAD7/wAAAAAAAAAAAAA=")
-tile_set = SubResource("TileSet_podf1")
+tile_map_data = PackedByteArray("AAD+/wAAAAAAAAIAAGD//wAAAAAAAAIAAGAAAAAAAAAAAAIAAGABAAAAAAAAAAIAAGACAAAAAAAAAAIAAGD9/wAAAAAAAAIAAGD8/wAAAAAAAAIAAGA=")
+tile_set = SubResource("TileSet_62xfx")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="."]
 z_index = 1
 position = Vector2(16, -16)
-tile_map_data = PackedByteArray("AAD7//v/AAABAAYAAAD7//z/AAABAAYAAAD7//3/AAABAAYAAAD7//7/AAABAAYAAAD7////AAABAAYAAAD8//v/AAABAAYAAAD8//z/AAABAAYAAAD8//3/AAABAAYAAAD8//7/AAABAAYAAAD8////AAABAAYAAAD9//v/AAABAAYAAAD9//z/AAABAAYAAAD9//3/AAABAAYAAAD9//7/AAABAAYAAAD9////AAABAAYAAAAAAPv/AAABAAYAAAAAAPz/AAABAAYAAAAAAP3/AAABAAYAAAAAAP7/AAABAAYAAAAAAP//AAABAAYAAAABAPv/AAABAAYAAAABAPz/AAABAAYAAAABAP3/AAABAAYAAAABAP7/AAABAAYAAAABAP//AAABAAYAAAACAPv/AAABAAYAAAACAPz/AAABAAYAAAACAP3/AAABAAYAAAACAP7/AAABAAYAAAACAP//AAABAAYAAAD+//v/AAABAAYAAAD+//z/AAABAAYAAAD+//3/AAABAAYAAAD+//7/AAABAAYAAAD+////AAABAAYAAAADAPv/AAABAAYAAAADAPz/AAABAAYAAAADAP3/AAABAAYAAAADAP7/AAABAAYAAAADAP//AAABAAYAAAA=")
-tile_set = SubResource("TileSet_2td0o")
+tile_map_data = PackedByteArray("AAD8/wEAAAABAAYAAAD8/wIAAAABAAYAAAD8/wMAAAABAAYAAAD8/wQAAAABAAYAAAD8/wUAAAABAAYAAAD9/wEAAAABAAYAAAD9/wIAAAABAAYAAAD9/wMAAAABAAYAAAD9/wQAAAABAAYAAAD9/wUAAAABAAYAAAD+/wEAAAABAAYAAAD+/wIAAAABAAYAAAD+/wMAAAABAAYAAAD+/wQAAAABAAYAAAD+/wUAAAABAAYAAAD//wEAAAABAAYAAAD//wIAAAABAAYAAAD//wMAAAABAAYAAAD//wQAAAABAAYAAAD//wUAAAABAAYAAAAAAAEAAAABAAYAAAAAAAIAAAABAAYAAAAAAAMAAAABAAYAAAAAAAQAAAABAAYAAAAAAAUAAAABAAYAAAABAAEAAAABAAYAAAABAAIAAAABAAYAAAABAAMAAAABAAYAAAABAAQAAAABAAYAAAABAAUAAAABAAYAAAACAAEAAAABAAYAAAACAAIAAAABAAYAAAACAAMAAAABAAYAAAACAAQAAAABAAYAAAACAAUAAAABAAYAAAA=")
+tile_set = SubResource("TileSet_jh3cs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(80, 0)
-shape = SubResource("RectangleShape2D_yj23k")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(-80, 0)
-shape = SubResource("RectangleShape2D_yj23k")
-
-[node name="Timer2" type="Timer" parent="."]
+shape = SubResource("RectangleShape2D_e2mes")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

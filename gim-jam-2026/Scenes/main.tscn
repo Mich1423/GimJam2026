@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=4 uid="uid://daklcmwaaneg1"]
+[gd_scene load_steps=9 format=4 uid="uid://daklcmwaaneg1"]
 
 [ext_resource type="Texture2D" uid="uid://flu53kjqh8cx" path="res://Assets/tilemap/Dungeon_Map.png" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://l2w35p2a0uy6" path="res://Scenes/object.tscn" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://cok5sno1u70g2" path="res://Scenes/exit.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://h123vh35oo2x" path="res://Scenes/wall.tscn" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://dbg4oyypwtyx2" path="res://Scenes/wall_open.tscn" id="3_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://b50wva7jod36b" path="res://Scenes/wall_side.tscn" id="6_21xkr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gbba"]
 texture = ExtResource("1_bo1nx")
@@ -309,19 +310,17 @@ position = Vector2(-64, -32)
 
 [node name="walls" type="Node2D" parent="."]
 
-[node name="Wall2" parent="walls" instance=ExtResource("3_8gbba")]
+[node name="Wall_Open" parent="walls" instance=ExtResource("3_jjvhh")]
+position = Vector2(0, -128)
+
+[node name="Wall" parent="walls" instance=ExtResource("3_8gbba")]
 position = Vector2(0, 128)
 letak = 1
 
-[node name="Wall3" parent="walls" instance=ExtResource("3_8gbba")]
-position = Vector2(128, 0)
-rotation = -1.5707964
-letak = 1
-
-[node name="Wall4" parent="walls" instance=ExtResource("3_8gbba")]
+[node name="Wall_Side" parent="walls" instance=ExtResource("6_21xkr")]
 position = Vector2(-128, 0)
 rotation = 1.5707964
-letak = 1
 
-[node name="Wall_Open" parent="walls" instance=ExtResource("3_jjvhh")]
-position = Vector2(0, -128)
+[node name="Wall_Side2" parent="walls" instance=ExtResource("6_21xkr")]
+position = Vector2(128, 0)
+rotation = -1.5707964

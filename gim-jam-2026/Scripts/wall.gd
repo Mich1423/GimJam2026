@@ -6,7 +6,7 @@ const TILE_SET:Vector2 = Vector2(32,32)
 @export_enum("Atas", "Bawah") var letak := 0
 @export_group("Timer")
 @export var timer: Timer
-@export var timeout: float
+@export var timeout: float = 5.0
 
 var direction: Vector2
 var target_position: Vector2
