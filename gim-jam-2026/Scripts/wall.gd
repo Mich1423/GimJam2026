@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var move_speed := 1200.0
+var move_speed := 10.0
 const TILE_SET:Vector2 = Vector2(32,32)
 
 @export_enum("Atas", "Bawah") var letak := 0
