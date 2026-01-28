@@ -58,4 +58,5 @@ func _on_button_button_up() -> void:
 
 func exit() -> void:
 	AudioManager.play_sfx("collect")
+	Global.score += 1
 	queue_free()

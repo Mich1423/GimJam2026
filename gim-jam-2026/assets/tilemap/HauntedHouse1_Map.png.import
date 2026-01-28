@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c20khuyij8208"
-path="res://.godot/imported/Skull4.png-3b12bf397045e14c8b733692058f9d55.ctex"
+uid="uid://c15smt72ij5pc"
+path="res://.godot/imported/HauntedHouse1_Map.png-423c9a67c958330a66d436e1e762ed78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/Skull4.png"
-dest_files=["res://.godot/imported/Skull4.png-3b12bf397045e14c8b733692058f9d55.ctex"]
+source_file="res://assets/tilemap/HauntedHouse1_Map.png"
+dest_files=["res://.godot/imported/HauntedHouse1_Map.png-423c9a67c958330a66d436e1e762ed78.ctex"]
 
 [params]
 
