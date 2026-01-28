@@ -1,18 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://l2w35p2a0uy6"]
+[gd_scene format=3 uid="uid://l2w35p2a0uy6"]
 
 [ext_resource type="Script" uid="uid://mxp3nmpqdwih" path="res://Scripts/object.gd" id="1_ufb5h"]
-[ext_resource type="Texture2D" uid="uid://c21thb86p0rrh" path="res://Assets/objects/Chest.png" id="2_h806f"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ufb5h"]
+load_path = "res://.godot/imported/Chest.png-8ec4f9ba84d370ecd15dea3ba2fa64f3.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ufb5h"]
 size = Vector2(30, 30)
 
-[node name="Object" type="CharacterBody2D"]
+[node name="Object" type="CharacterBody2D" unique_id=968524538]
 script = ExtResource("1_ufb5h")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_h806f")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1198418629]
+texture = SubResource("CompressedTexture2D_ufb5h")
 
-[node name="Button" type="Button" parent="Sprite2D"]
+[node name="Button" type="Button" parent="Sprite2D" unique_id=1637864332]
 self_modulate = Color(1, 1, 1, 0)
 show_behind_parent = true
 anchors_preset = 15
@@ -25,7 +27,7 @@ offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2012109053]
 shape = SubResource("RectangleShape2D_ufb5h")
 
 [connection signal="button_down" from="Sprite2D/Button" to="." method="_on_button_button_down"]

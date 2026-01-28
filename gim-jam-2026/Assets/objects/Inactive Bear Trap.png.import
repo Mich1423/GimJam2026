@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bis33ki4840vq"
-path="res://.godot/imported/Chest.png-8ec4f9ba84d370ecd15dea3ba2fa64f3.ctex"
+uid="uid://bljjeuq8jpc7g"
+path="res://.godot/imported/Inactive Bear Trap.png-29f88d764b8331e05e6441a466e3f637.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/objects/Chest.png"
-dest_files=["res://.godot/imported/Chest.png-8ec4f9ba84d370ecd15dea3ba2fa64f3.ctex"]
+source_file="res://Assets/objects/Inactive Bear Trap.png"
+dest_files=["res://.godot/imported/Inactive Bear Trap.png-29f88d764b8331e05e6441a466e3f637.ctex"]
 
 [params]
 
