@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://65vxdtoqeib"]
+
+[ext_resource type="Script" uid="uid://mxp3nmpqdwih" path="res://Scripts/object.gd" id="1_t44v2"]
+[ext_resource type="Texture2D" uid="uid://c20khuyij8208" path="res://assets/objects/Skull4.png" id="2_t44v2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ufb5h"]
+size = Vector2(30, 30)
+
+[node name="skull" type="CharacterBody2D" unique_id=968524538]
+script = ExtResource("1_t44v2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1198418629]
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("2_t44v2")
+
+[node name="Button" type="Button" parent="Sprite2D" unique_id=1637864332]
+self_modulate = Color(1, 1, 1, 0)
+show_behind_parent = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2012109053]
+shape = SubResource("RectangleShape2D_ufb5h")
+
+[connection signal="button_down" from="Sprite2D/Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Sprite2D/Button" to="." method="_on_button_button_up"]

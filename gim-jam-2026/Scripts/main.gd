@@ -21,7 +21,7 @@ func _process(_delta: float) -> void:
 	last_score_value = Global.score
 	_update_score_label()
 	
-	if Global.score == 4 and stage == Global.State.STAGE1:
+	if Global.score == 5 and stage == Global.State.STAGE1:
 		print("Stage 1 Clear")
 		Global.score = 0
 		Global.stage = Global.State.STAGE2

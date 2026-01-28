@@ -2,11 +2,15 @@
 
 [ext_resource type="Script" uid="uid://dg1f3gvswhra1" path="res://Scripts/main.gd" id="1_6bp64"]
 [ext_resource type="Texture2D" uid="uid://flu53kjqh8cx" path="res://assets/tilemap/Dungeon_Map.png" id="1_bo1nx"]
-[ext_resource type="PackedScene" uid="uid://l2w35p2a0uy6" path="res://Scenes/object.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://l2w35p2a0uy6" path="res://Scenes/chest.tscn" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://cok5sno1u70g2" path="res://Scenes/exit.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://h123vh35oo2x" path="res://Scenes/wall.tscn" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://dbg4oyypwtyx2" path="res://Scenes/wall_open.tscn" id="3_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://b50wva7jod36b" path="res://Scenes/wall_side.tscn" id="6_21xkr"]
+[ext_resource type="PackedScene" uid="uid://dtglfgqxqeten" path="res://Scenes/table.tscn" id="7_hptm8"]
+[ext_resource type="PackedScene" uid="uid://fghp10ywv5jb" path="res://Scenes/vase.tscn" id="8_344ge"]
+[ext_resource type="PackedScene" uid="uid://cqv4pi3ey4cy2" path="res://Scenes/broken_sword.tscn" id="8_d1ilt"]
+[ext_resource type="PackedScene" uid="uid://65vxdtoqeib" path="res://Scenes/skull.tscn" id="9_ynf5e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gbba"]
 texture = ExtResource("1_bo1nx")
@@ -308,17 +312,20 @@ position = Vector2(0, -128)
 
 [node name="objects" type="Node2D" parent="." unique_id=1966621728]
 
-[node name="Object" parent="objects" unique_id=11984956 instance=ExtResource("1_jjgbg")]
+[node name="sword" parent="objects" unique_id=1378421537 instance=ExtResource("8_d1ilt")]
+position = Vector2(-31, -48)
+
+[node name="gucci" parent="objects" unique_id=968524538 instance=ExtResource("8_344ge")]
+position = Vector2(64, -31)
+
+[node name="skull" parent="objects" unique_id=963926034 instance=ExtResource("9_ynf5e")]
+position = Vector2(-63, 0)
+
+[node name="chest" parent="objects" unique_id=11984956 instance=ExtResource("1_jjgbg")]
 position = Vector2(0, 32)
 
-[node name="Object4" parent="objects" unique_id=508034208 instance=ExtResource("1_jjgbg")]
-position = Vector2(-64, 96)
-
-[node name="Object2" parent="objects" unique_id=1513085911 instance=ExtResource("1_jjgbg")]
-position = Vector2(32, -32)
-
-[node name="Object3" parent="objects" unique_id=652605082 instance=ExtResource("1_jjgbg")]
-position = Vector2(-64, -32)
+[node name="table" parent="objects" unique_id=1510093238 instance=ExtResource("7_hptm8")]
+position = Vector2(-63, 49)
 
 [node name="walls" type="Node2D" parent="." unique_id=38420846]
 

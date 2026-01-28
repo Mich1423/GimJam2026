@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://flu53kjqh8cx" path="res://assets/tilemap/Dungeon_Map.png" id="2_ksd43"]
 [ext_resource type="PackedScene" uid="uid://cok5sno1u70g2" path="res://Scenes/exit.tscn" id="3_3ar5n"]
 [ext_resource type="Texture2D" uid="uid://c15smt72ij5pc" path="res://assets/tilemap/HauntedHouse1_Map.png" id="3_ksd43"]
-[ext_resource type="PackedScene" uid="uid://l2w35p2a0uy6" path="res://Scenes/object.tscn" id="4_hn6pn"]
+[ext_resource type="PackedScene" uid="uid://l2w35p2a0uy6" path="res://Scenes/chest.tscn" id="4_hn6pn"]
 [ext_resource type="PackedScene" uid="uid://dbg4oyypwtyx2" path="res://Scenes/wall_open.tscn" id="5_lgkra"]
 [ext_resource type="PackedScene" uid="uid://h123vh35oo2x" path="res://Scenes/wall.tscn" id="6_rljtk"]
 [ext_resource type="PackedScene" uid="uid://b50wva7jod36b" path="res://Scenes/wall_side.tscn" id="7_ak07e"]

@@ -1,4 +1,8 @@
 extends CharacterBody2D
+@export var gucci:bool = false
+@export var button: Button
+@export var object: Sprite2D
+@export var breakable: Sprite2D
 
 var dragging := false
 var offset := Vector2.ZERO
@@ -15,7 +19,13 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	move_timer -= delta
+	if gucci == true:
+		for i in get_slide_collision_count():
+			var collision = get_slide_collision(i)
+			if collision.get_collider() is CharacterBody2D:
+				_breakable()
 
+	
 	if dragging and move_timer <= 0.0:
 		var raw_target = get_global_mouse_position() - offset
 		var grid_target = raw_target.snapped(Vector2(SNAP_SIZE, SNAP_SIZE))
@@ -48,6 +58,12 @@ func _physics_process(delta: float) -> void:
 		global_position = target_position
 
 	move_and_slide()
+
+func _breakable():
+	button.visible =  false
+	object.visible =  false
+	breakable.visible =  true
+
 
 func _on_button_button_down() -> void:
 	dragging = true

@@ -28,6 +28,7 @@ func _on_timer_timeout() -> void:
 	# set new target
 	target_position = global_position + direction * TILE_SET
 	moving = true
+	print("waktu habis")
 
 func _physics_process(delta: float) -> void:
 	if moving:
