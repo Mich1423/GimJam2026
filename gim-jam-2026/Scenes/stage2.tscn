@@ -358,11 +358,12 @@ sources/1 = SubResource("TileSetAtlasSource_3ar5n")
 [sub_resource type="LabelSettings" id="LabelSettings_6bp64"]
 font_size = 45
 
-[node name="Main" type="Node2D" unique_id=1546902333 node_paths=PackedStringArray("score_label")]
+[node name="Main2" type="Node2D" unique_id=1546902333 node_paths=PackedStringArray("score_label")]
 script = ExtResource("1_gu0x3")
 score_label = NodePath("CanvasLayer/Control/HBoxContainer/Label")
 main_menu = "res://Scenes/Main_menu.tscn"
 stage2 = "res://Scenes/stage2.tscn"
+stage = 1
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=699725039]
 zoom = Vector2(1.75, 1.75)

@@ -293,6 +293,7 @@ script = ExtResource("1_6bp64")
 score_label = NodePath("CanvasLayer/Control/HBoxContainer/Label")
 main_menu = "res://Scenes/Main_menu.tscn"
 stage2 = "res://Scenes/stage2.tscn"
+stage = 0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=699725039]
 zoom = Vector2(1.75, 1.75)
@@ -308,6 +309,7 @@ position = Vector2(0, -128)
 [node name="objects" type="Node2D" parent="." unique_id=1966621728]
 
 [node name="Object" parent="objects" unique_id=11984956 instance=ExtResource("1_jjgbg")]
+position = Vector2(0, 32)
 
 [node name="Object4" parent="objects" unique_id=508034208 instance=ExtResource("1_jjgbg")]
 position = Vector2(-64, 96)
