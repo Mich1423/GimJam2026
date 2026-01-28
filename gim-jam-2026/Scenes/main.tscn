@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://daklcmwaaneg1"]
 
+[ext_resource type="Script" uid="uid://dg1f3gvswhra1" path="res://Scripts/main.gd" id="1_6bp64"]
 [ext_resource type="Texture2D" uid="uid://flu53kjqh8cx" path="res://Assets/tilemap/Dungeon_Map.png" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://l2w35p2a0uy6" path="res://Scenes/object.tscn" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://cok5sno1u70g2" path="res://Scenes/exit.tscn" id="2_kry3j"]
@@ -282,7 +283,14 @@ terrain_set_0/terrain_0/name = "Terrain 0"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 sources/0 = SubResource("TileSetAtlasSource_8gbba")
 
-[node name="Main" type="Node2D" unique_id=1546902333]
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6bp64"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6bp64"]
+font_size = 45
+
+[node name="Main" type="Node2D" unique_id=1546902333 node_paths=PackedStringArray("score_label")]
+script = ExtResource("1_6bp64")
+score_label = NodePath("CanvasLayer/Control/HBoxContainer/Label")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=699725039]
 zoom = Vector2(1.75, 1.75)
@@ -324,3 +332,33 @@ rotation = 1.5707964
 [node name="Wall_Side2" parent="walls" unique_id=538509456 instance=ExtResource("6_21xkr")]
 position = Vector2(128, 0)
 rotation = -1.5707964
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2015343421]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1738254958]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control" unique_id=1355927510]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 31.0
+offset_right = 160.0
+offset_bottom = 94.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/HBoxContainer" unique_id=941575554]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = SubResource("PlaceholderTexture2D_6bp64")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/HBoxContainer" unique_id=895043359]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0"
+label_settings = SubResource("LabelSettings_6bp64")

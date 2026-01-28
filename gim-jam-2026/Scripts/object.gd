@@ -16,7 +16,6 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	move_timer -= delta
 
-	# Handle dragging with grid snapping
 	if dragging and move_timer <= 0.0:
 		var raw_target = get_global_mouse_position() - offset
 		var grid_target = raw_target.snapped(Vector2(SNAP_SIZE, SNAP_SIZE))
@@ -35,13 +34,15 @@ func _physics_process(delta: float) -> void:
 			elif diff.y < 0:
 				candidate.y -= SNAP_SIZE
 
-		target_position = candidate
-		move_timer = MOVE_INTERVAL
+		if candidate != target_position:
+			target_position = candidate
+			AudioManager.play_sfx("move")
+			move_timer = MOVE_INTERVAL
 
 	# Smooth movement to target
 	var to_target = target_position - global_position
 	if to_target.length() > 1.0:
-		velocity = to_target * move_speed * delta
+		velocity = to_target * move_speed * delta 
 	else:
 		velocity = Vector2.ZERO
 		global_position = target_position
@@ -56,4 +57,5 @@ func _on_button_button_up() -> void:
 	dragging = false
 
 func exit() -> void:
+	AudioManager.play_sfx("collect")
 	queue_free()

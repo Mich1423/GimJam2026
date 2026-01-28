@@ -13,7 +13,7 @@ func _ready() -> void:
 	show_main_menu()
 	first_button.call_deferred("grab_focus")
 	
-	#AudioManager.play_music("main_menu")
+	AudioManager.play_music("main_menu")
 
 func show_main_menu() -> void:
 	title.visible = true
