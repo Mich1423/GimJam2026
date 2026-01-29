@@ -301,7 +301,7 @@ font_size = 45
 script = ExtResource("1_gkv4x")
 score_label = NodePath("CanvasLayer/Control/HBoxContainer/Label")
 main_menu = "res://Scenes/Main_menu.tscn"
-stage2 = "res://Scenes/stage2.tscn"
+stage2 = "res://Scenes/levels/stage2.tscn"
 stage = 0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=699725039]
@@ -318,19 +318,19 @@ position = Vector2(0, -128)
 [node name="objects" type="Node2D" parent="." unique_id=1966621728]
 
 [node name="sword" parent="objects" unique_id=1378421537 instance=ExtResource("4_q1jrx")]
-position = Vector2(-31, -48)
+position = Vector2(-64, -64)
 
 [node name="gucci" parent="objects" unique_id=968524538 instance=ExtResource("5_kaxse")]
 position = Vector2(64, -31)
 
 [node name="skull" parent="objects" unique_id=963926034 instance=ExtResource("6_0rq8d")]
-position = Vector2(-63, 0)
+position = Vector2(64, 32)
 
 [node name="chest" parent="objects" unique_id=11984956 instance=ExtResource("7_87w0e")]
 position = Vector2(0, 32)
 
 [node name="table" parent="objects" unique_id=1510093238 instance=ExtResource("8_n6a7n")]
-position = Vector2(-63, 49)
+position = Vector2(-64, 64)
 
 [node name="walls" type="Node2D" parent="." unique_id=38420846]
 
