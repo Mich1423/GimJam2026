@@ -1,7 +1,7 @@
 extends Node
 
 var score := 0
-var condition:int = 0
+var condition := false
 enum State{STAGE1,STAGE2}
 var stage = State.STAGE1
 

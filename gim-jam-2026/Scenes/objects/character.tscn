@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://u7hnyqidi0n7"]
 
-[ext_resource type="Texture2D" uid="uid://b2dnbi2okbw6w" path="res://assets/objects/LostKnight.png" id="1_mqqcj"]
+[ext_resource type="Texture2D" uid="uid://b2dnbi2okbw6w" path="res://Assets/objects/LostKnight.png" id="1_mqqcj"]
 [ext_resource type="Script" uid="uid://bk5ie8n7scygd" path="res://Scripts/charcter.gd" id="1_xgdby"]
-[ext_resource type="Texture2D" uid="uid://61fs22sv84ub" path="res://assets/objects/LostChild.png" id="3_3bfmq"]
+[ext_resource type="Texture2D" uid="uid://61fs22sv84ub" path="res://Assets/objects/LostChild.png" id="3_3bfmq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xgdby"]
 

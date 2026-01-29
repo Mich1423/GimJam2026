@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cbfdh2tnqmh5i"
-path="res://.godot/imported/tap.wav-603be1784ef818ae7b548221f37acaad.sample"
+path="res://.godot/imported/tap.wav-b2b8703b36ee8313de3b53e695afc0cc.sample"
 
 [deps]
 
-source_file="res://assets/Audio/sounds/tap.wav"
-dest_files=["res://.godot/imported/tap.wav-603be1784ef818ae7b548221f37acaad.sample"]
+source_file="res://Assets/Audio/sounds/tap.wav"
+dest_files=["res://.godot/imported/tap.wav-b2b8703b36ee8313de3b53e695afc0cc.sample"]
 
 [params]
 

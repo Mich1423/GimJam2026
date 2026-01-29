@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://stu20l7xalmq"
-path="res://.godot/imported/010_Tyrell Andever Santosa - Winning song 2026-01-29 21_41.wav-c3c63b21fea871e8dd1802fa5b4a3428.sample"
+path="res://.godot/imported/010_Tyrell Andever Santosa - Winning song 2026-01-29 21_41.wav-b2cf6957d7d1c7665daa8a7531e445df.sample"
 
 [deps]
 
-source_file="res://assets/Audio/music/010_Tyrell Andever Santosa - Winning song 2026-01-29 21_41.wav"
-dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Winning song 2026-01-29 21_41.wav-c3c63b21fea871e8dd1802fa5b4a3428.sample"]
+source_file="res://Assets/Audio/music/010_Tyrell Andever Santosa - Winning song 2026-01-29 21_41.wav"
+dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Winning song 2026-01-29 21_41.wav-b2cf6957d7d1c7665daa8a7531e445df.sample"]
 
 [params]
 

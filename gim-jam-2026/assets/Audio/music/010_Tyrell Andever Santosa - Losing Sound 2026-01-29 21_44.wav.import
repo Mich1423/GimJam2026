@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dtyruubadpuat"
-path="res://.godot/imported/010_Tyrell Andever Santosa - Losing Sound 2026-01-29 21_44.wav-e4f2a86f219072e436ee92b98dab154d.sample"
+path="res://.godot/imported/010_Tyrell Andever Santosa - Losing Sound 2026-01-29 21_44.wav-7ef24f49ef6dd1b4123db55484a3b968.sample"
 
 [deps]
 
-source_file="res://assets/Audio/music/010_Tyrell Andever Santosa - Losing Sound 2026-01-29 21_44.wav"
-dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Losing Sound 2026-01-29 21_44.wav-e4f2a86f219072e436ee92b98dab154d.sample"]
+source_file="res://Assets/Audio/music/010_Tyrell Andever Santosa - Losing Sound 2026-01-29 21_44.wav"
+dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Losing Sound 2026-01-29 21_44.wav-7ef24f49ef6dd1b4123db55484a3b968.sample"]
 
 [params]
 

@@ -26,12 +26,12 @@ func _process(_delta: float) -> void:
 	last_score_value = Global.score
 	_update_score_label()
 	
-	if Global.score == Global.min_score_level_1 and stage == Global.State.STAGE1:
+	if Global.score >= Global.min_score_level_1 and stage == Global.State.STAGE1:
 		print("Stage 1 Clear")
 		Global.score = 0
 		Global.stage = Global.State.STAGE2
 		get_tree().change_scene_to_file(stage2)
-	elif Global.score == Global.min_score_level_2 and stage==Global.State.STAGE2:
+	elif Global.score >= Global.min_score_level_2 and stage == Global.State.STAGE2:
 		AudioManager.stop_music()
 		Global.score = 0
 		Global.stage = Global.State.STAGE1

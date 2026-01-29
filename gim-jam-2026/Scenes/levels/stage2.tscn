@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://crnme2r518o8s"]
 
 [ext_resource type="Script" uid="uid://dg1f3gvswhra1" path="res://Scripts/main.gd" id="1_xru37"]
-[ext_resource type="Texture2D" uid="uid://flu53kjqh8cx" path="res://assets/tilemap/Dungeon_Map.png" id="2_0ar15"]
-[ext_resource type="Texture2D" uid="uid://c15smt72ij5pc" path="res://assets/tilemap/HauntedHouse1_Map.png" id="3_qsm0e"]
+[ext_resource type="Texture2D" uid="uid://flu53kjqh8cx" path="res://Assets/tilemap/Dungeon_Map.png" id="2_0ar15"]
+[ext_resource type="Texture2D" uid="uid://c15smt72ij5pc" path="res://Assets/tilemap/HauntedHouse1_Map.png" id="3_qsm0e"]
 [ext_resource type="PackedScene" uid="uid://cok5sno1u70g2" path="res://Scenes/environments/exit.tscn" id="4_3u7r8"]
 [ext_resource type="PackedScene" uid="uid://u7hnyqidi0n7" path="res://Scenes/objects/character.tscn" id="4_bt2bw"]
 [ext_resource type="PackedScene" uid="uid://dbg4oyypwtyx2" path="res://Scenes/environments/wall_open.tscn" id="6_0qosr"]
@@ -12,9 +12,10 @@
 [ext_resource type="PackedScene" uid="uid://cnaccqio5r4lr" path="res://Scenes/objects/vass.tscn" id="8_bt2bw"]
 [ext_resource type="PackedScene" uid="uid://b50wva7jod36b" path="res://Scenes/environments/wall_side.tscn" id="8_cx2kk"]
 [ext_resource type="PackedScene" uid="uid://djgdmylp41kxj" path="res://Scenes/objects/clock.tscn" id="8_xru37"]
-[ext_resource type="FontFile" uid="uid://7ftophio671q" path="res://assets/Fonts/Minecraft.ttf" id="9_0ar15"]
+[ext_resource type="FontFile" uid="uid://7ftophio671q" path="res://Assets/Fonts/Minecraft.ttf" id="9_0ar15"]
 [ext_resource type="PackedScene" uid="uid://bqkld0honyd3r" path="res://Scenes/objects/coffin.tscn" id="10_cx2kk"]
 [ext_resource type="PackedScene" uid="uid://dh4sovy6wou2c" path="res://Scenes/objects/chair.tscn" id="14_ns7gx"]
+[ext_resource type="Texture2D" uid="uid://b6kt4l0apb64i" path="res://Assets/UI/coin.png" id="14_qthwd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gbba"]
 texture = ExtResource("2_0ar15")
@@ -360,10 +361,8 @@ terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 sources/0 = SubResource("TileSetAtlasSource_8gbba")
 sources/1 = SubResource("TileSetAtlasSource_3ar5n")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d1ilt"]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_ksd43"]
-atlas = SubResource("CompressedTexture2D_d1ilt")
+atlas = ExtResource("14_qthwd")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="LabelSettings" id="LabelSettings_6bp64"]

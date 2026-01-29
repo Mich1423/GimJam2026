@@ -3,7 +3,7 @@ extends Control
 @export_file_path("*.tscn") var main_menu: String
 
 func _ready() -> void:
-	if Global.condition == 0:
+	if Global.condition == false:
 		AudioManager.play_music("win")
 	else:
 		AudioManager.play_music("lose")

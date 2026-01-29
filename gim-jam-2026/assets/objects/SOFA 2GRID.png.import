@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://p14guydnnvvo"
-path="res://.godot/imported/SOFA 2GRID.png-c051bfc097c0a2c4bc659870ceb5f00b.ctex"
+path="res://.godot/imported/SOFA 2GRID.png-c6e2a644679722e2724b35e38579c0e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/SOFA 2GRID.png"
-dest_files=["res://.godot/imported/SOFA 2GRID.png-c051bfc097c0a2c4bc659870ceb5f00b.ctex"]
+source_file="res://Assets/objects/SOFA 2GRID.png"
+dest_files=["res://.godot/imported/SOFA 2GRID.png-c6e2a644679722e2724b35e38579c0e8.ctex"]
 
 [params]
 

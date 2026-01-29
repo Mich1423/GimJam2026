@@ -14,7 +14,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="GimJam2026"
+config/name="Mini Move"
 run/main_scene="uid://rh2d35scwl6s"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://bm6rqrgp53tge"

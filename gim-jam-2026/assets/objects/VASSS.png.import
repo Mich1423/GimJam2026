@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsksntkfhmk4x"
-path="res://.godot/imported/VASSS.png-ab42df08392a1dca390115e8d8b85d65.ctex"
+path="res://.godot/imported/VASSS.png-fbcccc9d18764f2359ce473c3706c3f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/VASSS.png"
-dest_files=["res://.godot/imported/VASSS.png-ab42df08392a1dca390115e8d8b85d65.ctex"]
+source_file="res://Assets/objects/VASSS.png"
+dest_files=["res://.godot/imported/VASSS.png-fbcccc9d18764f2359ce473c3706c3f1.ctex"]
 
 [params]
 

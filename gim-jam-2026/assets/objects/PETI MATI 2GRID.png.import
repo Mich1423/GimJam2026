@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bij4vhx2q2kyt"
-path="res://.godot/imported/PETI MATI 2GRID.png-af61853423bf9ce0c14fe8d6229e1906.ctex"
+path="res://.godot/imported/PETI MATI 2GRID.png-4e99b2ad32e16fe582321f81d73fddbe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/PETI MATI 2GRID.png"
-dest_files=["res://.godot/imported/PETI MATI 2GRID.png-af61853423bf9ce0c14fe8d6229e1906.ctex"]
+source_file="res://Assets/objects/PETI MATI 2GRID.png"
+dest_files=["res://.godot/imported/PETI MATI 2GRID.png-4e99b2ad32e16fe582321f81d73fddbe.ctex"]
 
 [params]
 

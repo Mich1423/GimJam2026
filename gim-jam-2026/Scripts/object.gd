@@ -65,6 +65,7 @@ func _physics_process(delta: float) -> void:
 
 func _break():
 	Global.min_score_level_1 -= 1
+	print (Global.min_score_level_1)
 	button.visible =  false
 	sprite.visible =  false
 	breakable.visible =  true
