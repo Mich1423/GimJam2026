@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://6mv7c0g8mvol"
-path="res://.godot/imported/010_Tyrell Andever Santosa - Intro dungeon .wav-9cffd229190f0cb0049e81223b748691.sample"
+path="res://.godot/imported/010_Tyrell Andever Santosa - Intro dungeon .wav-fd341c2462fe60838a995c616b4db697.sample"
 
 [deps]
 
-source_file="res://Assets/Audio/music/010_Tyrell Andever Santosa - Intro dungeon .wav"
-dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Intro dungeon .wav-9cffd229190f0cb0049e81223b748691.sample"]
+source_file="res://assets/Audio/music/010_Tyrell Andever Santosa - Intro dungeon .wav"
+dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Intro dungeon .wav-fd341c2462fe60838a995c616b4db697.sample"]
 
 [params]
 

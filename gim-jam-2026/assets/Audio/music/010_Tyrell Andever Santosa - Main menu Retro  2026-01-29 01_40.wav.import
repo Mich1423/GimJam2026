@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c6xfxrrbceyc"
-path="res://.godot/imported/010_Tyrell Andever Santosa - Main menu Retro  2026-01-29 01_40.wav-d96b85c3b2e8d7e107459270b7ecd7c5.sample"
+path="res://.godot/imported/010_Tyrell Andever Santosa - Main menu Retro  2026-01-29 01_40.wav-3913fee1c79e0203d7e698af80cbb01d.sample"
 
 [deps]
 
-source_file="res://Assets/Audio/music/010_Tyrell Andever Santosa - Main menu Retro  2026-01-29 01_40.wav"
-dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Main menu Retro  2026-01-29 01_40.wav-d96b85c3b2e8d7e107459270b7ecd7c5.sample"]
+source_file="res://assets/Audio/music/010_Tyrell Andever Santosa - Main menu Retro  2026-01-29 01_40.wav"
+dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Main menu Retro  2026-01-29 01_40.wav-3913fee1c79e0203d7e698af80cbb01d.sample"]
 
 [params]
 

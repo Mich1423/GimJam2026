@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c15smt72ij5pc"
-path="res://.godot/imported/HauntedHouse1_Map.png-a99e42806770383032ccb1846583893b.ctex"
+path="res://.godot/imported/HauntedHouse1_Map.png-423c9a67c958330a66d436e1e762ed78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tilemap/HauntedHouse1_Map.png"
-dest_files=["res://.godot/imported/HauntedHouse1_Map.png-a99e42806770383032ccb1846583893b.ctex"]
+source_file="res://assets/tilemap/HauntedHouse1_Map.png"
+dest_files=["res://.godot/imported/HauntedHouse1_Map.png-423c9a67c958330a66d436e1e762ed78.ctex"]
 
 [params]
 

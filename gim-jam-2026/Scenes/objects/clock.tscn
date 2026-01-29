@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://djgdmylp41kxj"]
+
+[ext_resource type="Script" uid="uid://mxp3nmpqdwih" path="res://Scripts/object.gd" id="1_bx3wg"]
+[ext_resource type="Texture2D" uid="uid://wkeje2oju76w" path="res://assets/objects/CLOCK.png" id="2_bx3wg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ufb5h"]
+size = Vector2(30, 30)
+
+[node name="clock" type="CharacterBody2D" unique_id=968524538]
+script = ExtResource("1_bx3wg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1198418629]
+position = Vector2(-0.5, 4.7683716e-07)
+scale = Vector2(0.96875, 0.9375)
+texture = ExtResource("2_bx3wg")
+
+[node name="Button" type="Button" parent="Sprite2D" unique_id=1637864332]
+self_modulate = Color(1, 1, 1, 0)
+show_behind_parent = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2012109053]
+shape = SubResource("RectangleShape2D_ufb5h")
+
+[connection signal="button_down" from="Sprite2D/Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Sprite2D/Button" to="." method="_on_button_button_up"]

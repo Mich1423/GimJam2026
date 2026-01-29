@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dv4xwskpt61hx"
-path="res://.godot/imported/background_main-menu.png-4e8b445d0b7deebc3284470eb3ac849b.ctex"
+uid="uid://b2dnbi2okbw6w"
+path="res://.godot/imported/LostKnight.png-8bbdf59e18039668d6cfe56f199e06bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilemap/background_main-menu.png"
-dest_files=["res://.godot/imported/background_main-menu.png-4e8b445d0b7deebc3284470eb3ac849b.ctex"]
+source_file="res://assets/objects/LostKnight.png"
+dest_files=["res://.godot/imported/LostKnight.png-8bbdf59e18039668d6cfe56f199e06bd.ctex"]
 
 [params]
 

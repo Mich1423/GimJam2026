@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=4 uid="uid://b50wva7jod36b"]
+[gd_scene format=4 uid="uid://b50wva7jod36b"]
 
 [ext_resource type="Script" uid="uid://4txgilwm8ob4" path="res://Scripts/wall.gd" id="1_08t5n"]
-[ext_resource type="Texture2D" uid="uid://flu53kjqh8cx" path="res://Assets/tilemap/Dungeon_Map.png" id="2_jh3cs"]
+[ext_resource type="Texture2D" uid="uid://flu53kjqh8cx" path="res://assets/tilemap/Dungeon_Map.png" id="2_jh3cs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l8sii"]
 texture = ExtResource("2_jh3cs")
@@ -512,26 +512,26 @@ sources/0 = SubResource("TileSetAtlasSource_08t5n")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2mes"]
 size = Vector2(224, 32)
 
-[node name="Wall_Side" type="CharacterBody2D" node_paths=PackedStringArray("timer")]
+[node name="Wall_Side" type="CharacterBody2D" unique_id=1185252317 node_paths=PackedStringArray("timer") groups=["Wall"]]
 collision_mask = 0
 script = ExtResource("1_08t5n")
 letak = 1
 timer = NodePath("Timer")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=1785639278]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=768513614]
 position = Vector2(16, -16)
 tile_map_data = PackedByteArray("AAD+/wAAAAAAAAIAAGD//wAAAAAAAAIAAGAAAAAAAAAAAAIAAGABAAAAAAAAAAIAAGACAAAAAAAAAAIAAGD9/wAAAAAAAAIAAGD8/wAAAAAAAAIAAGA=")
 tile_set = SubResource("TileSet_62xfx")
 
-[node name="TileMapLayer2" type="TileMapLayer" parent="."]
+[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=1995577987]
 z_index = 1
 position = Vector2(16, -16)
 tile_map_data = PackedByteArray("AAD8/wEAAAABAAYAAAD8/wIAAAABAAYAAAD8/wMAAAABAAYAAAD8/wQAAAABAAYAAAD8/wUAAAABAAYAAAD9/wEAAAABAAYAAAD9/wIAAAABAAYAAAD9/wMAAAABAAYAAAD9/wQAAAABAAYAAAD9/wUAAAABAAYAAAD+/wEAAAABAAYAAAD+/wIAAAABAAYAAAD+/wMAAAABAAYAAAD+/wQAAAABAAYAAAD+/wUAAAABAAYAAAD//wEAAAABAAYAAAD//wIAAAABAAYAAAD//wMAAAABAAYAAAD//wQAAAABAAYAAAD//wUAAAABAAYAAAAAAAEAAAABAAYAAAAAAAIAAAABAAYAAAAAAAMAAAABAAYAAAAAAAQAAAABAAYAAAAAAAUAAAABAAYAAAABAAEAAAABAAYAAAABAAIAAAABAAYAAAABAAMAAAABAAYAAAABAAQAAAABAAYAAAABAAUAAAABAAYAAAACAAEAAAABAAYAAAACAAIAAAABAAYAAAACAAMAAAABAAYAAAACAAQAAAABAAYAAAACAAUAAAABAAYAAAA=")
 tile_set = SubResource("TileSet_jh3cs")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1224677254]
 shape = SubResource("RectangleShape2D_e2mes")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
