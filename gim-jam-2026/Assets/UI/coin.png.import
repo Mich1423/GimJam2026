@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de1ii0dfnxdch"
-path="res://.godot/imported/Guci Pot.png-273490705cb9ea459775bc92c19937dc.ctex"
+uid="uid://b6kt4l0apb64i"
+path="res://.godot/imported/coin.png-59bd64c31c2d3c574fc2bf9cf5ecb903.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/objects/Guci Pot.png"
-dest_files=["res://.godot/imported/Guci Pot.png-273490705cb9ea459775bc92c19937dc.ctex"]
+source_file="res://Assets/UI/coin.png"
+dest_files=["res://.godot/imported/coin.png-59bd64c31c2d3c574fc2bf9cf5ecb903.ctex"]
 
 [params]
 

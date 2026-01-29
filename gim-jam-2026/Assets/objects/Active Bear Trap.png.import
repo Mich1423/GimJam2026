@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5f41vrqokgnk"
-path="res://.godot/imported/Active Bear Trap.png-b2bf99ea74a023d159b3e74bc150c699.ctex"
+path="res://.godot/imported/Active Bear Trap.png-4c96f60a997cf76cfd902b539ab448fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/Active Bear Trap.png"
-dest_files=["res://.godot/imported/Active Bear Trap.png-b2bf99ea74a023d159b3e74bc150c699.ctex"]
+source_file="res://Assets/objects/Active Bear Trap.png"
+dest_files=["res://.godot/imported/Active Bear Trap.png-4c96f60a997cf76cfd902b539ab448fb.ctex"]
 
 [params]
 

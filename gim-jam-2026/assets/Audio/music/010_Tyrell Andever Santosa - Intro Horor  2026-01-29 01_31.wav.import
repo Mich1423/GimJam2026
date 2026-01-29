@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://x3nnstggdng6"
-path="res://.godot/imported/010_Tyrell Andever Santosa - Intro Horor  2026-01-29 01_31.wav-ee94339fd8fa7aa9b4778762abd2e044.sample"
+path="res://.godot/imported/010_Tyrell Andever Santosa - Intro Horor  2026-01-29 01_31.wav-a864906940cc6f30f6a3937c3ce0a989.sample"
 
 [deps]
 
-source_file="res://assets/Audio/music/010_Tyrell Andever Santosa - Intro Horor  2026-01-29 01_31.wav"
-dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Intro Horor  2026-01-29 01_31.wav-ee94339fd8fa7aa9b4778762abd2e044.sample"]
+source_file="res://Assets/Audio/music/010_Tyrell Andever Santosa - Intro Horor  2026-01-29 01_31.wav"
+dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Intro Horor  2026-01-29 01_31.wav-a864906940cc6f30f6a3937c3ce0a989.sample"]
 
 [params]
 

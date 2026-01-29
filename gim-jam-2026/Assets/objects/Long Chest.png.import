@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kbfg1urtge8i"
-path="res://.godot/imported/Long Chest.png-3f5fd4cb9430949f34f8006b5d354956.ctex"
+path="res://.godot/imported/Long Chest.png-5b9c52051cacc3b64fcb6566fa2fef85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/Long Chest.png"
-dest_files=["res://.godot/imported/Long Chest.png-3f5fd4cb9430949f34f8006b5d354956.ctex"]
+source_file="res://Assets/objects/Long Chest.png"
+dest_files=["res://.godot/imported/Long Chest.png-5b9c52051cacc3b64fcb6566fa2fef85.ctex"]
 
 [params]
 

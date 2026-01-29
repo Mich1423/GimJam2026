@@ -1,13 +1,16 @@
 extends CharacterBody2D
+
+@export var snap_size := 32
 @export var gucci:bool = false
 @export var button: Button
-@export var object: Sprite2D
+@export var sprite: Sprite2D
 @export var breakable: Sprite2D
 
 var dragging := false
 var offset := Vector2.ZERO
 
-const SNAP_SIZE := 32
+var rotated := false
+
 const MOVE_INTERVAL := 0.1
 
 var move_speed := 1200.0
@@ -15,7 +18,7 @@ var target_position := Vector2.ZERO
 var move_timer := 0.0
 
 func _ready() -> void:
-	target_position = global_position.snapped(Vector2(SNAP_SIZE, SNAP_SIZE))
+	target_position = global_position.snapped(Vector2(snap_size, snap_size))
 
 func _physics_process(delta: float) -> void:
 	move_timer -= delta
@@ -23,26 +26,26 @@ func _physics_process(delta: float) -> void:
 		for i in get_slide_collision_count():
 			var collision = get_slide_collision(i)
 			if collision.get_collider() is CharacterBody2D:
-				_breakable()
+				_break()
 
 	
 	if dragging and move_timer <= 0.0:
 		var raw_target = get_global_mouse_position() - offset
-		var grid_target = raw_target.snapped(Vector2(SNAP_SIZE, SNAP_SIZE))
+		var grid_target = raw_target.snapped(Vector2(snap_size, snap_size))
 		var diff = grid_target - target_position
 
 		var candidate = target_position
 
 		if abs(diff.x) > abs(diff.y):
 			if diff.x > 0:
-				candidate.x += SNAP_SIZE
+				candidate.x += snap_size
 			elif diff.x < 0:
-				candidate.x -= SNAP_SIZE
+				candidate.x -= snap_size
 		elif abs(diff.y) > 0:
 			if diff.y > 0:
-				candidate.y += SNAP_SIZE
+				candidate.y += snap_size
 			elif diff.y < 0:
-				candidate.y -= SNAP_SIZE
+				candidate.y -= snap_size
 
 		if candidate != target_position:
 			target_position = candidate
@@ -59,9 +62,9 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-func _breakable():
+func _break():
 	button.visible =  false
-	object.visible =  false
+	sprite.visible =  false
 	breakable.visible =  true
 
 

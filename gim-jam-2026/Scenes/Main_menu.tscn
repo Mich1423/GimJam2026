@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://rh2d35scwl6s"]
 
 [ext_resource type="Script" uid="uid://cfksf40l838h3" path="res://Scripts/Systems/main_menu.gd" id="1_7sp8y"]
-[ext_resource type="Texture2D" uid="uid://dv4xwskpt61hx" path="res://assets/tilemap/background_main-menu.png" id="2_787fc"]
-[ext_resource type="FontFile" uid="uid://7ftophio671q" path="res://assets/Fonts/Minecraft.ttf" id="3_ihofj"]
-[ext_resource type="Texture2D" uid="uid://bm6rqrgp53tge" path="res://assets/tilemap/logo.png" id="4_xwboo"]
+[ext_resource type="Texture2D" uid="uid://dv4xwskpt61hx" path="res://Assets/tilemap/background_main-menu.png" id="2_787fc"]
+[ext_resource type="FontFile" uid="uid://7ftophio671q" path="res://Assets/Fonts/Minecraft.ttf" id="3_ihofj"]
+[ext_resource type="Texture2D" uid="uid://bm6rqrgp53tge" path="res://Assets/tilemap/logo.png" id="4_xwboo"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_siod4"]
 
@@ -45,7 +45,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 3
 script = ExtResource("1_7sp8y")
-game_scene_path = "res://Scenes/main.tscn"
+game_scene_path = "res://Scenes/levels/main.tscn"
 title = NodePath("Logo")
 main_buttons = NodePath("VBoxContainer")
 first_button = NodePath("VBoxContainer/Start_Button")
