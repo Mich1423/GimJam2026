@@ -2,7 +2,7 @@ extends Node
 
 @export_file_path("*.tscn") var game_scene_path: String
 
-@export var title: Control
+@export var title: TextureRect
 @export var main_buttons: VBoxContainer
 @export var first_button: Button
 
@@ -23,7 +23,7 @@ func show_main_menu() -> void:
 
 func _on_start_button_pressed() -> void:
 	if game_scene_path:
-		#AudioManager.stop_music()
+		AudioManager.stop_music()
 		get_tree().change_scene_to_file(game_scene_path)
 	else:
 		print("No game scene assigned.")

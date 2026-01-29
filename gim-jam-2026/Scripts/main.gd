@@ -11,7 +11,11 @@ func _ready() -> void:
 	# Initialize stored value
 	last_score_value = Global.score
 	_update_score_label()
-	
+	if Global.stage == Global.State.STAGE1:
+		AudioManager.play_music("Dungeon")
+	elif Global.stage == Global.State.STAGE2:
+		AudioManager.play_music("House")
+
 
 func _process(_delta: float) -> void:
 	# Check for change

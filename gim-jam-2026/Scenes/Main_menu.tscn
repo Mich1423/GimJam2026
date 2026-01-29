@@ -1,12 +1,11 @@
 [gd_scene format=3 uid="uid://rh2d35scwl6s"]
 
 [ext_resource type="Script" uid="uid://cfksf40l838h3" path="res://Scripts/Systems/main_menu.gd" id="1_7sp8y"]
+[ext_resource type="Texture2D" uid="uid://dv4xwskpt61hx" path="res://assets/tilemap/background_main-menu.png" id="2_787fc"]
+[ext_resource type="FontFile" uid="uid://7ftophio671q" path="res://assets/Fonts/Minecraft.ttf" id="3_ihofj"]
+[ext_resource type="Texture2D" uid="uid://bm6rqrgp53tge" path="res://assets/tilemap/logo.png" id="4_xwboo"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_siod4"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_7sp8y"]
-font_size = 120
-font_color = Color(0.69411767, 0, 0.16078432, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_siod4"]
 bg_color = Color(0.69298553, 0, 0.16201794, 1)
@@ -47,7 +46,7 @@ grow_vertical = 2
 size_flags_vertical = 3
 script = ExtResource("1_7sp8y")
 game_scene_path = "res://Scenes/main.tscn"
-title = NodePath("Title_Label")
+title = NodePath("Logo")
 main_buttons = NodePath("VBoxContainer")
 first_button = NodePath("VBoxContainer/Start_Button")
 settings = NodePath("Settings_Panel")
@@ -63,34 +62,21 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_siod4")
 metadata/_edit_lock_ = true
 
-[node name="Title_Label" type="Label" parent="." unique_id=1391899174]
+[node name="Background" type="TextureRect" parent="." unique_id=2075599020]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -301.5
-offset_top = 67.0
-offset_right = 301.5
-offset_bottom = 232.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
-text = "Mini Move"
-label_settings = SubResource("LabelSettings_7sp8y")
-horizontal_alignment = 1
-vertical_alignment = 1
+grow_vertical = 2
+texture = ExtResource("2_787fc")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1852988570]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -140.0
-offset_top = -399.5
-offset_right = 140.0
-offset_bottom = -57.5
-grow_horizontal = 2
-grow_vertical = 0
+layout_mode = 0
+offset_left = 672.0
+offset_top = 131.0
+offset_right = 952.0
+offset_bottom = 473.0
 theme_override_constants/separation = 30
 
 [node name="Start_Button" type="Button" parent="VBoxContainer" unique_id=1223814905]
@@ -101,6 +87,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ihofj")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_b07fi")
@@ -116,6 +103,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ihofj")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_b07fi")
@@ -131,6 +119,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ihofj")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_b07fi")
@@ -146,6 +135,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ihofj")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_b07fi")
@@ -222,6 +212,21 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_b07fi")
 theme_override_styles/hover = SubResource("StyleBoxFlat_x6lt7")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_x6lt7")
 text = "Back"
+
+[node name="Logo" type="TextureRect" parent="." unique_id=266866537]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.289
+anchor_top = 0.46400002
+anchor_right = 0.289
+anchor_bottom = 0.46400002
+offset_left = -323.928
+offset_top = -165.672
+offset_right = -3.928009
+offset_bottom = 14.328003
+grow_horizontal = 2
+scale = Vector2(2, 2)
+texture = ExtResource("4_xwboo")
 
 [connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Settings_Buton" to="." method="_on_settings_button_pressed"]

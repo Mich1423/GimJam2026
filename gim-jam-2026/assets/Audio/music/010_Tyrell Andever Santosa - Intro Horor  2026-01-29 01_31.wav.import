@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://x3nnstggdng6"
+path="res://.godot/imported/010_Tyrell Andever Santosa - Intro Horor  2026-01-29 01_31.wav-ee94339fd8fa7aa9b4778762abd2e044.sample"
+
+[deps]
+
+source_file="res://assets/Audio/music/010_Tyrell Andever Santosa - Intro Horor  2026-01-29 01_31.wav"
+dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Intro Horor  2026-01-29 01_31.wav-ee94339fd8fa7aa9b4778762abd2e044.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

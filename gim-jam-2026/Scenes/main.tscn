@@ -314,6 +314,7 @@ position = Vector2(0, -128)
 
 [node name="sword" parent="objects" unique_id=1378421537 instance=ExtResource("8_d1ilt")]
 position = Vector2(-31, -48)
+is_2_grid = true
 
 [node name="gucci" parent="objects" unique_id=968524538 instance=ExtResource("8_344ge")]
 position = Vector2(64, -31)
@@ -326,6 +327,7 @@ position = Vector2(0, 32)
 
 [node name="table" parent="objects" unique_id=1510093238 instance=ExtResource("7_hptm8")]
 position = Vector2(-63, 49)
+is_2_grid = true
 
 [node name="walls" type="Node2D" parent="." unique_id=38420846]
 

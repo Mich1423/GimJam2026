@@ -2,14 +2,28 @@
 
 [ext_resource type="Script" uid="uid://bqu1dk54kqj31" path="res://Scripts/Systems/audio_manager.gd" id="1_uw7cn"]
 [ext_resource type="Script" uid="uid://cu80j8p57vit4" path="res://Scripts/Systems/audio_library_entry.gd" id="2_irqle"]
-[ext_resource type="AudioStream" uid="uid://dbeni5j8kklj4" path="res://Assets/Audio/music/time_for_adventure.mp3" id="3_w1biw"]
-[ext_resource type="AudioStream" uid="uid://clwu00431yo7k" path="res://Assets/Audio/sounds/coin.wav" id="4_or5jf"]
-[ext_resource type="AudioStream" uid="uid://cbfdh2tnqmh5i" path="res://Assets/Audio/sounds/tap.wav" id="5_w1biw"]
+[ext_resource type="AudioStream" uid="uid://c6xfxrrbceyc" path="res://assets/Audio/music/010_Tyrell Andever Santosa - Main menu Retro  2026-01-29 01_40.wav" id="3_vomij"]
+[ext_resource type="AudioStream" uid="uid://6mv7c0g8mvol" path="res://assets/Audio/music/010_Tyrell Andever Santosa - Intro dungeon .wav" id="4_b25nj"]
+[ext_resource type="AudioStream" uid="uid://clwu00431yo7k" path="res://assets/Audio/sounds/coin.wav" id="4_or5jf"]
+[ext_resource type="AudioStream" uid="uid://x3nnstggdng6" path="res://assets/Audio/music/010_Tyrell Andever Santosa - Intro Horor  2026-01-29 01_31.wav" id="5_2q2en"]
+[ext_resource type="AudioStream" uid="uid://cbfdh2tnqmh5i" path="res://assets/Audio/sounds/tap.wav" id="5_w1biw"]
 
 [sub_resource type="Resource" id="Resource_vomij"]
 script = ExtResource("2_irqle")
 key = &"main_menu"
-stream = ExtResource("3_w1biw")
+stream = ExtResource("3_vomij")
+metadata/_custom_type_script = "uid://cu80j8p57vit4"
+
+[sub_resource type="Resource" id="Resource_oltcq"]
+script = ExtResource("2_irqle")
+key = &"Dungeon"
+stream = ExtResource("4_b25nj")
+metadata/_custom_type_script = "uid://cu80j8p57vit4"
+
+[sub_resource type="Resource" id="Resource_yd46d"]
+script = ExtResource("2_irqle")
+key = &"House"
+stream = ExtResource("5_2q2en")
 metadata/_custom_type_script = "uid://cu80j8p57vit4"
 
 [sub_resource type="Resource" id="Resource_or5jf"]
@@ -26,5 +40,5 @@ metadata/_custom_type_script = "uid://cu80j8p57vit4"
 
 [node name="AudioManager" type="Node" unique_id=755607285]
 script = ExtResource("1_uw7cn")
-music_library = Array[ExtResource("2_irqle")]([SubResource("Resource_vomij")])
+music_library = Array[ExtResource("2_irqle")]([SubResource("Resource_vomij"), SubResource("Resource_oltcq"), SubResource("Resource_yd46d")])
 sfx_library = Array[ExtResource("2_irqle")]([SubResource("Resource_or5jf"), SubResource("Resource_b25nj")])
