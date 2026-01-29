@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://rh2d35scwl6s"]
 
 [ext_resource type="Script" uid="uid://cfksf40l838h3" path="res://Scripts/Systems/main_menu.gd" id="1_7sp8y"]
-[ext_resource type="Texture2D" uid="uid://dv4xwskpt61hx" path="res://Assets/tilemap/background_main-menu.png" id="2_787fc"]
+[ext_resource type="Texture2D" uid="uid://dv4xwskpt61hx" path="res://Assets/UI/background_main-menu.png" id="2_787fc"]
 [ext_resource type="FontFile" uid="uid://7ftophio671q" path="res://Assets/Fonts/Minecraft.ttf" id="3_ihofj"]
-[ext_resource type="Texture2D" uid="uid://bm6rqrgp53tge" path="res://Assets/tilemap/logo.png" id="4_xwboo"]
-[ext_resource type="Script" uid="uid://bvyfjoy4ol0xb" path="res://Scripts/systems/settings.gd" id="5_ihofj"]
+[ext_resource type="Texture2D" uid="uid://bm6rqrgp53tge" path="res://Assets/UI/logo.png" id="4_xwboo"]
+[ext_resource type="Script" uid="uid://bvyfjoy4ol0xb" path="res://Scripts/Systems/settings.gd" id="5_ihofj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_siod4"]
 

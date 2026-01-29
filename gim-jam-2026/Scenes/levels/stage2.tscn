@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dbg4oyypwtyx2" path="res://Scenes/environments/wall_open.tscn" id="6_0qosr"]
 [ext_resource type="PackedScene" uid="uid://h123vh35oo2x" path="res://Scenes/environments/wall.tscn" id="7_ns7gx"]
 [ext_resource type="PackedScene" uid="uid://b50wva7jod36b" path="res://Scenes/environments/wall_side.tscn" id="8_cx2kk"]
+[ext_resource type="FontFile" uid="uid://7ftophio671q" path="res://Assets/Fonts/Minecraft.ttf" id="9_0ar15"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gbba"]
 texture = ExtResource("2_0ar15")
@@ -361,6 +362,7 @@ atlas = SubResource("CompressedTexture2D_d1ilt")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="LabelSettings" id="LabelSettings_6bp64"]
+font = ExtResource("9_0ar15")
 font_size = 45
 
 [node name="Main2" type="Node2D" unique_id=1546902333 node_paths=PackedStringArray("score_label")]
