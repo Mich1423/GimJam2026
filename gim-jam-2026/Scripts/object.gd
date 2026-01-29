@@ -27,6 +27,7 @@ func _physics_process(delta: float) -> void:
 			var collision = get_slide_collision(i)
 			if collision.get_collider() is CharacterBody2D:
 				_break()
+				gucci = false
 
 	
 	if dragging and move_timer <= 0.0:
@@ -63,6 +64,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func _break():
+	Global.min_score_level_1 -= 1
 	button.visible =  false
 	sprite.visible =  false
 	breakable.visible =  true
