@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://rh2d35scwl6s"]
 
 [ext_resource type="Script" uid="uid://cfksf40l838h3" path="res://Scripts/Systems/main_menu.gd" id="1_7sp8y"]
-[ext_resource type="Texture2D" uid="uid://dv4xwskpt61hx" path="res://Assets/UI/background_main-menu.png" id="2_787fc"]
-[ext_resource type="FontFile" uid="uid://7ftophio671q" path="res://Assets/Fonts/Minecraft.ttf" id="3_ihofj"]
-[ext_resource type="Texture2D" uid="uid://bm6rqrgp53tge" path="res://Assets/UI/logo.png" id="4_xwboo"]
+[ext_resource type="Texture2D" uid="uid://dv4xwskpt61hx" path="res://assets/UI/background_main-menu.png" id="2_787fc"]
+[ext_resource type="FontFile" uid="uid://7ftophio671q" path="res://assets/Fonts/Minecraft.ttf" id="3_ihofj"]
+[ext_resource type="Texture2D" uid="uid://bm6rqrgp53tge" path="res://assets/UI/logo.png" id="4_xwboo"]
 [ext_resource type="Script" uid="uid://bvyfjoy4ol0xb" path="res://Scripts/Systems/settings.gd" id="5_ihofj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_siod4"]
@@ -355,17 +355,17 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 184.0
-offset_top = 169.0
-offset_right = -664.0
-offset_bottom = -169.0
+offset_left = 142.0
+offset_top = 151.0
+offset_right = -620.0
+offset_bottom = -187.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "- Project Manager
+text = "- Project Manager & Game Desainer
 Arzikh Isfahan Farizdiansyah
 
-- Game Designer
-Michael Budiputra
+
+
 
 - Sound Composer
 Tyrell Andever Santosa"

@@ -1,17 +1,18 @@
-[gd_scene format=3 uid="uid://kh5atsrqs2ww"]
+[gd_scene format=3 uid="uid://dh4sovy6wou2c"]
 
-[ext_resource type="Script" uid="uid://mxp3nmpqdwih" path="res://Scripts/object.gd" id="1_6y4hv"]
-[ext_resource type="Texture2D" uid="uid://p14guydnnvvo" path="res://assets/objects/SOFA 2GRID.png" id="2_6y4hv"]
+[ext_resource type="Script" uid="uid://mxp3nmpqdwih" path="res://Scripts/object.gd" id="1_i4uor"]
+[ext_resource type="Texture2D" uid="uid://bm0w8ls3t3cpg" path="res://assets/objects/KURSII.png" id="2_i4uor"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ufb5h"]
-size = Vector2(30, 45)
+size = Vector2(30, 30)
 
-[node name="Sofa" type="CharacterBody2D" unique_id=968524538]
-script = ExtResource("1_6y4hv")
+[node name="chair" type="CharacterBody2D" unique_id=968524538]
+script = ExtResource("1_i4uor")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1198418629]
-rotation = -1.5707964
-texture = ExtResource("2_6y4hv")
+position = Vector2(-4.7683716e-07, -4.7683716e-07)
+scale = Vector2(0.9375, 0.9375)
+texture = ExtResource("2_i4uor")
 
 [node name="Button" type="Button" parent="Sprite2D" unique_id=1637864332]
 self_modulate = Color(1, 1, 1, 0)
@@ -27,7 +28,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2012109053]
-position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_ufb5h")
 
 [connection signal="button_down" from="Sprite2D/Button" to="." method="_on_button_button_down"]

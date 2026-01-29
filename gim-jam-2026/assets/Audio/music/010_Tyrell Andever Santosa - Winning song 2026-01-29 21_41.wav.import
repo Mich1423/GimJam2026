@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://stu20l7xalmq"
+path="res://.godot/imported/010_Tyrell Andever Santosa - Winning song 2026-01-29 21_41.wav-c3c63b21fea871e8dd1802fa5b4a3428.sample"
+
+[deps]
+
+source_file="res://assets/Audio/music/010_Tyrell Andever Santosa - Winning song 2026-01-29 21_41.wav"
+dest_files=["res://.godot/imported/010_Tyrell Andever Santosa - Winning song 2026-01-29 21_41.wav-c3c63b21fea871e8dd1802fa5b4a3428.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

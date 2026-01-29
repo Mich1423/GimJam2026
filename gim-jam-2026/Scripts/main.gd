@@ -1,13 +1,14 @@
 extends Node2D
 
 @export var score_label: Label
-@export_file_path("*.tscn") var main_menu: String
+@export_file_path("*.tscn") var win: String
 @export_file_path("*.tscn") var stage2: String
 @export var stage = Global.stage
 var last_score_value := 0
 
 func _ready() -> void:
-	print("Main menu path:", main_menu)
+	Global.condition = 0
+	Global.stage = stage
 	# Initialize stored value
 	last_score_value = Global.score
 	_update_score_label()
@@ -30,11 +31,11 @@ func _process(_delta: float) -> void:
 		Global.score = 0
 		Global.stage = Global.State.STAGE2
 		get_tree().change_scene_to_file(stage2)
-	elif Global.score == Global.min_score_level_1 and stage==Global.State.STAGE2:
-		print("Stage 2 Clear")
+	elif Global.score == Global.min_score_level_2 and stage==Global.State.STAGE2:
+		AudioManager.stop_music()
 		Global.score = 0
 		Global.stage = Global.State.STAGE1
-		get_tree().change_scene_to_file(main_menu)
+		get_tree().change_scene_to_file(win)
 
 func _update_score_label() -> void:
 	score_label.text = str(Global.score)
